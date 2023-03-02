@@ -1549,7 +1549,7 @@ const PDFViewerApplication = {
 };
 exports.PDFViewerApplication = PDFViewerApplication;
 {
-  const HOSTED_VIEWER_ORIGINS = ["null", "http://firebasestorage.googleapis.com/v0/b/madsonsilva-site.appspot.com/o/historico.pdf?alt=media&token=88e22399-2e11-428d-86b6-b41ab60c32b0", "https://firebasestorage.googleapis.com/v0/b/madsonsilva-site.appspot.com/o/historico.pdf?alt=media&token=88e22399-2e11-428d-86b6-b41ab60c32b0"];
+  const HOSTED_VIEWER_ORIGINS = ["null", "http://mozilla.github.io", "https://mozilla.github.io"];
   var validateFileURL = function (file) {
     if (!file) {
       return;
@@ -8445,7 +8445,7 @@ class PDFViewer {
   #onVisibilityChange = null;
   #scaleTimeoutId = null;
   constructor(options) {
-    const viewerVersion = '3.5.4';
+    const viewerVersion = '3.5.6';
     if (_pdfjsLib.version !== viewerVersion) {
       throw new Error(`The API version "${_pdfjsLib.version}" does not match the Viewer version "${viewerVersion}".`);
     }
@@ -13755,8 +13755,8 @@ var _ui_utils = __webpack_require__(3);
 var _app_options = __webpack_require__(5);
 var _pdf_link_service = __webpack_require__(7);
 var _app = __webpack_require__(2);
-const pdfjsVersion = '3.5.4';
-const pdfjsBuild = '22c997030';
+const pdfjsVersion = '3.5.6';
+const pdfjsBuild = '9640add1f';
 const AppConstants = {
   LinkTarget: _pdf_link_service.LinkTarget,
   RenderingStates: _ui_utils.RenderingStates,
